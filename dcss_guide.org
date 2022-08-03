@@ -15,8 +15,8 @@ Sum of the following:
 + Dexterity / 2 (exact)
 + Fighting skill / 2 (rolled)
 + Relevant weapon skill / 2 (rolled)
-+ Weapon's base accuracy
-+ Weapon's enchantment level
++ Weapon base accuracy
++ Weapon enchantment level
 + Slaying bonuses
 + Other modifiers
 **** Monster Evasion (EV)
@@ -28,7 +28,7 @@ Orc EVs are around 10; exact value depends on type.
 Sum of the following:
 
 + Base value of 18
-+ Monster HD * 1.5 (or 2.5 if monster tagged Fighter)
++ Monster HD * 1.5 (or 2.5 if monster is tagged Fighter)
 + Other modifiers
 **** Player Evasion (EV)
 Sum of the following:
@@ -82,6 +82,16 @@ Monsters have defined attack damage and sometimes random weapons.
 **** Player AC
 Mostly comes from worn armour. The game is pretty clear about AC effects.
 
-AC has a guaranteed melee damage reduction (GDR). At 40 AC, melee damage will be reduced 40%. GDR follows a root scale (1/4).
+Armour enhancement level adds to AC.
+
+AC has a guaranteed melee damage reduction (GDR). GDR follows a root scale.
+
+GDR reduces melee damage AC^(1/4) * 16 percent, with a max of AC / 2 reduction.
 ** Weapon Speed
 Weapon speed may be reduced by the relevant weapon skill. The game is clear about these numbers in weapon descriptions.
+** Shields
+SH is similar to EV.
+
+SH is compared against to-hit similar to EV and to-hit.
+
+SH is improved by Block Skill and Dexterity.
