@@ -42,7 +42,7 @@ Sum of the following:
 
 "Roughly" means I've left out scaling factors. Fortunately, the game calculates EV for us and shows us the result.
 
-The important thing is the relation between the factors, such as: 
+The important thing is the relation between the factors, such as:
 + Dodging and Dexterity multiply.
 + Str and Amour Skill help with Encumbrance.
 + Encumbrance is squared at one point.
@@ -62,7 +62,7 @@ Product of the following:
 + 1 + Weapon Skill / 25
 + 1 + Fighting Skill / 30
 
-Plus bonuses: 
+Plus bonuses:
 + Might or Berserk: +1d10 (1 to 10)
 + Weapon enchantment level
 + Slaying bonuses
@@ -83,4 +83,5 @@ Monsters have defined attack damage and sometimes random weapons.
 Mostly comes from worn armour. The game is pretty clear about AC effects.
 
 AC has a guaranteed melee damage reduction (GDR). At 40 AC, melee damage will be reduced 40%. GDR follows a root scale (1/4).
-** Speed
+** Weapon Speed
+Weapon speed may be reduced by the relevant weapon skill. The game is clear about these numbers in weapon descriptions.
