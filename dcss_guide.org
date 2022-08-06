@@ -35,9 +35,9 @@ Sum of the following:
 
 + Base value of 10
 + Size factor (large players are easier to hit)
-+ Roughly: Dodging * Dexterity * (Str / Encumbrance)
-+ Roughly subtract: (Encumbrance^2 - Armour Skill) / Str
-+ Roughly subtract: Shield Encumbrance - Shield Skill
++ Roughly: Dodging * Dexterity * (1 - (Encumbrance / Str) || Str / Encumbrance ; not to exceed 1)
++ Roughly subtracts: (Encumbrance^2 - Armour Skill) / Str
++ Roughly subtracts: Shield Encumbrance - Shield Skill
 + Other modifiers
 
 "Roughly" means I've left out scaling factors. Fortunately, the game calculates EV for us and shows us the result.
@@ -95,3 +95,28 @@ SH is similar to EV.
 SH is compared against to-hit similar to EV and to-hit.
 
 SH is improved by Block Skill and Dexterity.
+* Items
+** Armour
+| Armour               | Base AC | Encumbrance |
+|----------------------+---------+-------------|
+| Animal Skin / Robe   |       2 |           0 |
+| Leather Armour       |       3 |           4 |
+| [Light] Ring Mail    |       5 |           7 |
+| [Light] Scale Mail   |       6 |          10 |
+| [Heavy] Chain Mail   |       8 |          15 |
+| [Heavy] Plate Armour |      10 |          18 |
+| Crystal Plate Armour |      14 |          23 |
+* Hit Damage
+The number of exclamation marks indicate the damage done:
+
+| Number of ! | Min Damage |
+|           1 |          7 |
+|           2 |         18 |
+|           3 |         36 |
+|           4 |         72 |
+|           5 |        144 |
+|           6 |        288 |
+|           7 |        576 |
+|           8 |       1152 |
+|           9 |       2304 |
+|          10 |       4608 |
