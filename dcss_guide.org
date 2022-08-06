@@ -110,6 +110,7 @@ SH is improved by Block Skill and Dexterity.
 The number of exclamation marks indicate the damage done:
 
 | Number of ! | Min Damage |
+|-------------+------------|
 |           1 |          7 |
 |           2 |         18 |
 |           3 |         36 |
@@ -120,3 +121,18 @@ The number of exclamation marks indicate the damage done:
 |           8 |       1152 |
 |           9 |       2304 |
 |          10 |       4608 |
+
+Middle of ranges:
+
+| Number of ! | Approx. Damage |
+|-------------+----------------|
+|           0 |              3 |
+|           1 |             12 |
+|           2 |             25 |
+|           3 |             50 |
+|           4 |            100 |
+|           5 |            200 |
+|           6 |            400 |
+|           7 |            800 |
+|           8 |           1700 |
+|           9 |           3200 |
