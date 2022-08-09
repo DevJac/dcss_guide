@@ -58,7 +58,7 @@ Rolled AC also reduces magic damage.
 Product of the following:
 
 + Weapon base damage
-+ 0.75 + 0.025 * Str (equals 1.0 at Str 10)
++ 0.75 + 0.025 * Stat (equals 1.0 at Stat 10)
 + 1 + Weapon Skill / 25
 + 1 + Fighting Skill / 30
 
@@ -89,6 +89,8 @@ AC has a guaranteed melee damage reduction (GDR). GDR follows a root scale.
 GDR reduces melee damage AC^(1/4) * 16 percent, with a max of AC / 2 reduction.
 ** Weapon Speed
 Weapon speed may be reduced by the relevant weapon skill. The game is clear about these numbers in weapon descriptions.
+** Weapon Stat
+Most weapons scale with Str. Blades and ranged scale with Dex.
 ** Shields
 SH is similar to EV.
 
