@@ -53,7 +53,6 @@ Damage is rolled and AC is rolled. Rolled damage is reduced by rolled AC.
 
 Rolled AC also reduces magic damage.
 *** Player attacks Monster
-
 **** Player damage
 Product of the following:
 
@@ -108,6 +107,62 @@ SH is improved by Block Skill and Dexterity.
 | [Heavy] Chain Mail   |       8 |          15 |
 | [Heavy] Plate Armour |      10 |          18 |
 | Crystal Plate Armour |      14 |          23 |
+** Weapons
+*** Short Blades
+**** Common
+- Dagger
+- Short Sword
+- Rapier
+**** Special
+- Quick Blade
+*** Long Blade
+**** Common
+- Falchion
+- Long Sword
+- Scimitar
+- Great Sword
+**** Special
+- Demon / Eudemon Blade
+- Double / Triple Sword
+*** Axes
+**** Common
+- Hand Axe
+- War Axe
+- Broad Axe
+- Battleaxe
+**** Special
+- Executioner's Axe
+*** Maces & Flails
+**** Junk (for monsters to carry)
+- Club
+- Whip
+**** Common
+- Mace
+- Flail
+- Morningstar
+- Dire Flail
+**** Special
+- Demon / Sacred Whip
+- Eveningstar
+**** Great
+- Great Mace
+- Great Club
+- Great Spiked Club
+*** Polearms
+**** Common
+- Spear
+- Trident
+- Halberd
+- Glaive
+**** Special
+- Demon / Trishula Trident
+- Bardiche
+*** Staves
+**** Common
+- Quarterstaff
+- Lajatang
+**** Special
+- Magic Staffs
 * Hit Damage
 The number of exclamation marks indicate the damage done:
 
