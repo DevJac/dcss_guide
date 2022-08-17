@@ -193,3 +193,10 @@ Middle of ranges:
 |           7 |            800 |
 |           8 |           1700 |
 |           9 |           3200 |
+* Config
+#+begin_src
+show_more = false
+dump_message_count = 1000
+
+force_more_message += You hear the .+ of .*(distant|nearby).*\.
+#+end_src
