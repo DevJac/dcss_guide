@@ -197,6 +197,7 @@ Middle of ranges:
 #+begin_src
 show_more = false
 dump_message_count = 1000
+explore_stop =
 
 force_more_message += You hear the .+ of .*(distant|nearby).*\.
 #+end_src
