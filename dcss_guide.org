@@ -197,6 +197,7 @@ Middle of ranges:
 #+begin_src
 show_more = false
 dump_message_count = 1000
+tile_tag_pref = tutorial
 explore_stop =
 
 force_more_message += You hear the .+ of .*(distant|nearby).*\.
