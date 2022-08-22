@@ -195,6 +195,7 @@ Middle of ranges:
 |           9 |           3200 |
 * Config
 #+begin_src
+include = safe_move_shift.txt
 show_more = false
 dump_message_count = 1000
 tile_tag_pref = tutorial
