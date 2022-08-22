@@ -201,5 +201,13 @@ dump_message_count = 1000
 tile_tag_pref = tutorial
 explore_stop =
 
-force_more_message += You hear the .+ of .*(distant|nearby).*\.
+force_more_message += You hear the .+ of .+(distant|nearby)
+force_more_message += The portal closes with a thud
+force_more_message += The archway melts and disappears
+force_more_message += The flow of magic halts
+force_more_message += The gateway collapses
+force_more_message += The gate to the bazaar disappears
+force_more_message += The hiss of flowing sand is gone
+force_more_message += The drain falls to bits
+force_more_message += a river of lava pours forth, sealing it permanently
 #+end_src
