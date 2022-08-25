@@ -201,6 +201,10 @@ dump_message_count = 1000
 tile_tag_pref = tutorial
 explore_stop =
 
+autopickup = $?!+"/(}
+autopickup_exceptions ^= <tin of tremorstones
+autopickup_exceptions ^= <spellbook
+
 force_more_message += cacodemon
 force_more_message += neqoxec
 force_more_message += orb of fire
