@@ -221,4 +221,5 @@ force_more_message += The gate to the bazaar disappears
 force_more_message += The hiss of flowing sand is gone
 force_more_message += The drain falls to bits
 force_more_message += a river of lava pours forth, sealing it permanently
+force_more_message += The walls and floor vibrate strangely for a moment
 #+end_src
