@@ -56,10 +56,10 @@ Rolled AC also reduces magic damage.
 **** Player damage
 Product of the following:
 
-+ Weapon base damage
-+ 0.75 + 0.025 * Stat (equals 1.0 at Stat 10)
-+ 1 + Weapon Skill / 25
-+ 1 + Fighting Skill / 30
+ * Weapon base damage
+ * 0.75 + 0.025 * Stat (equals 1.0 at Stat 10)
+ * 1 + Weapon Skill / 25
+ * 1 + Fighting Skill / 30
 
 Plus bonuses:
 + Might or Berserk: +1d10 (1 to 10)
