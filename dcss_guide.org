@@ -200,7 +200,7 @@ show_more = false
 dump_message_count = 1000
 tile_tag_pref = tutorial
 
-explore_stop  = items,shops,altars,portals,branches,runed_doors
+explore_stop  = items,altars,portals,branches,runed_doors
 explore_stop += greedy_pickup_smart,greedy_visited_item_stack
 
 autopickup = $?!+"/(}
