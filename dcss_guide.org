@@ -208,6 +208,7 @@ autopickup_exceptions ^= <tin of tremorstones
 autopickup_exceptions ^= <spellbook
 
 force_more_message += Your .+ skill .+ level
+force_more_message += raining target .+ reached
 
 force_more_message += cacodemon
 force_more_message += neqoxec
