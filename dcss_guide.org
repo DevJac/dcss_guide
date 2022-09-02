@@ -200,7 +200,7 @@ show_more = false
 dump_message_count = 1000
 tile_tag_pref = tutorial
 
-explore_stop  = items,altars,portals,branches,runed_doors
+explore_stop  = glowing_items,altars,portals,branches,runed_doors
 explore_stop += greedy_pickup_smart,greedy_visited_item_stack
 
 autopickup = $?!+"/(}
@@ -217,4 +217,101 @@ force_more_message += shining eye
 
 force_more_message += You hear the .+ of .*(distant|nearby)
 force_more_message += The walls and floor vibrate strangely for a moment
+#+end_src
+* Scripts
+** Analyze Hits / Misses
+#+begin_src python
+import json
+import re
+import requests
+
+response = requests.get('https://cbro.berotato.org/morgue/Buttons840/Buttons840.txt')
+
+hit_verbs = [
+    'hit',
+    'clumsily bash',
+    'puncture',
+    'impale',
+    'spit',
+    'attack',
+    'spit',
+    'skewer',
+    'stick',
+    'perforate',
+    'slash',
+    'slice',
+    'dice',
+    'fracture',
+    'carve',
+    'carve',
+    'shave',
+    'open',
+    'slice',
+    'cut',
+    'carve',
+    'chop',
+    'thump',
+    'sock',
+    'bludgeon',
+    'shatter',
+    'splatter',
+    'crush',
+    'beat',
+    'hammer',
+    'pound',
+    'flatten',
+    'whack',
+    'thrash',
+    'punish',
+    'devastate',
+    'scratch',
+    'claw',
+    'mangle',
+    'eviscerate',
+    'tentacle-slap',
+    'bludgeon',
+    'batter',
+    'thrash',
+    'hit',
+    'punch',
+    'pummel',
+    'squash',
+    'pound',
+    'pummel',
+    'pulverise',
+    'squash',
+    'beat',
+    'hit',
+]
+
+hit_verbs = set(hit_verbs)
+
+re_hit_part = '|'.join(hit_verbs)
+
+hit = len(re.findall(f'You ({re_hit_part})', response.text))
+hit_no_damage = len(re.findall(f'You ({re_hit_part}).+but do no damage', response.text))
+miss = len(re.findall('You ?(completely|closely|barely)? miss', response.text))
+
+print(f'hit:       {hit - hit_no_damage:4,}')
+print(f'no damage: {hit_no_damage:4,}')
+print(f'miss:      {miss:4,}\n')
+
+no_count_streak = 0
+for i in range(0, 11):
+    if i == 0:
+        end = '\\.'
+    else:
+        end = '\\!' * i
+    hit_line = 'hit{}'.format(end.replace('\\', ''))
+    re_damage = f'You ({re_hit_part}).+{end}'
+    damage_count = len(re.findall(re_damage, response.text))
+    if damage_count > 0:
+        no_count_streak = 0
+    else:
+        no_count_streak += 1
+    if no_count_streak > 3:
+        break
+    if i == 0:
+        damage_count -= hit_no_damage
+    print(f'{hit_line:15} {damage_count:4,}')
 #+end_src
